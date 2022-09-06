@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "c5adcc9d-368e-48e0-9ae5-6fd87b40da65",
+		"name": "Course02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "482752"
+	},
+	"item": [
+		{
+			"name": "Filtered Image with Basic Auth",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Th1s1sr4nd0mp@ssw0rd",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://image-filter-starter-code-dev-datpt452.us-east-1.elasticbeanstalk.com/filteredimage/?image_url=https://saohaivuong.com/wp-content/uploads/2021/10/macbook-pro-14-inch-2027.jpg",
+					"protocol": "http",
+					"host": [
+						"image-filter-starter-code-dev-datpt452",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"filteredimage",
+						""
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://saohaivuong.com/wp-content/uploads/2021/10/macbook-pro-14-inch-2027.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtered Image without Authen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://image-filter-starter-code-dev-datpt452.us-east-1.elasticbeanstalk.com/filteredimage/?image_url=https://saohaivuong.com/wp-content/uploads/2021/10/macbook-pro-14-inch-2027.jpg",
+					"protocol": "http",
+					"host": [
+						"image-filter-starter-code-dev-datpt452",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"filteredimage",
+						""
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://saohaivuong.com/wp-content/uploads/2021/10/macbook-pro-14-inch-2027.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
